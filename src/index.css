@@ -1,0 +1,159 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+		'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas,
+		'Courier New', monospace;
+}
+
+
+
+
+
+
+
+.container {
+	background-color:#f9f8f3;
+
+	/* background-position: auto;
+	background-repeat: no-repeat;
+	background-size: cover; */
+	border-radius: 10px;
+	min-width: 100vh;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	min-height: 100vh;
+}
+
+.notes-list {
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(
+		auto-fill,
+		minmax(250px, 1fr)
+	);
+}
+
+.note.new {
+	background-color: transparent;
+}
+
+.smallNote {
+	margin-top: 10px;
+	border: none;
+	resize: none;
+	background-color: transparent;
+	margin-left: 20px;
+}
+
+.smallNote:focus {
+	outline: none;
+} 
+
+.save {
+	background-color: #e1e1e1;
+	border: none;
+	border-radius: 15px;
+	padding: 5px 10px 5px 10px;
+}
+
+.save:hover {
+	background-color: #ededed;
+	cursor: pointer;
+}
+
+.note {
+	background-image: url("/src/components/images/Layer\ 1.png");
+	background-position: auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	border-radius: 10px;
+	padding: 1rem;
+	min-height: 370px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	white-space: pre-wrap;
+}
+.note h5{
+	margin-bottom: 0px;
+	padding: 20px;
+}
+.note span{
+	margin-top: -60px;
+	padding:20px;
+	overflow-wrap: break-word;
+}
+
+.note-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+}
+.header_note{
+	
+	width: fit-content;
+	height: fit-content;
+	margin-left: 20px;
+}
+.header_note h5{
+	margin-bottom: 0px;
+}
+.header_note input{
+	/* border-radius: 10px;	 */
+	border: none;
+	resize: none;
+	background-color: transparent;
+
+	
+}
+.header_note input:focus{
+	outline: none;
+}
+
+.delete-icon {
+	cursor: pointer;
+}
+
+.noteNew{
+	background-color: #e7b13c;
+	border-radius: 10px;
+	padding: 1rem;
+	min-height: 470px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	white-space: pre-wrap;
+
+}
+.big-note-header input{
+	border: none;
+	resize: none;
+	background-color: #e7b13c;
+
+
+}
+.big-note-header input:focus{
+	outline: none;
+}
+
+.textarea-note{
+	background-color: #9bfd8c;
+	border: none;
+	resize: none;
+	border-radius: 10px;
+	padding: 1rem;
+}
+.textarea-note:focus{
+	outline: none;
+}
